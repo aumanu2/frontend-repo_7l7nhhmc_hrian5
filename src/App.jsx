@@ -3,8 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import SkillsMarketplace from './components/SkillsMarketplace';
-import Showcase from './components/Showcase';
-import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,9 +12,7 @@ function App() {
         <Hero />
         <Features />
         <SkillsMarketplace />
-        <Showcase />
       </main>
-      <Footer />
     </div>
   );
 }
