@@ -1,18 +1,29 @@
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import SkillsMarketplace from './components/SkillsMarketplace';
+import Navbar from './components/Navbar.jsx';
+import Hero from './components/Hero.jsx';
+import Features from './components/Features.jsx';
+import SkillsMarketplace from './components/SkillsMarketplace.jsx';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen w-full bg-slate-950 text-white antialiased">
+      {/* Navigation */}
       <Navbar />
-      <main className="mx-auto max-w-7xl space-y-12 px-4 pb-16 pt-6 sm:px-6 lg:px-8">
+
+      {/* Hero with 3D scene */}
+      <section id="home" className="relative">
         <Hero />
+      </section>
+
+      {/* Core Features */}
+      <section id="features" className="relative">
         <Features />
+      </section>
+
+      {/* Skills Marketplace */}
+      <section id="marketplace" className="relative">
         <SkillsMarketplace />
-      </main>
+      </section>
     </div>
   );
 }
